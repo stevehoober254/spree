@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe Spree::StockMovement, type: :model do
+  it_behaves_like 'metadata'
+
   describe 'Constants' do
     describe 'QUANTITY_LIMITS[:max]' do
       it 'return 2**31 - 1' do
